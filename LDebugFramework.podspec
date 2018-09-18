@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LDebugFramework'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'iOS开发调试辅助框架:浏览器日志输出,沙盒文件和NSUserDefault查看!'
 
 # This description is used to generate tags and improve search results.

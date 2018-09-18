@@ -207,8 +207,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				3EC84D7E767C6AD74666A381 /* [CP] Embed Pods Frameworks */,
-				2CD439F94B92252AB31CED12 /* [CP] Copy Pods Resources */,
+				27145F494860C70BB028B0FB /* [CP] Embed Pods Frameworks */,
+				1A6F0863EE9A781DDCF21A87 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = 12star9;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 73889W623Z;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -315,7 +318,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2CD439F94B92252AB31CED12 /* [CP] Copy Pods Resources */ = {
+		1A6F0863EE9A781DDCF21A87 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -333,18 +336,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LDebugFramework_Example/Pods-LDebugFramework_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3EC84D7E767C6AD74666A381 /* [CP] Embed Pods Frameworks */ = {
+		27145F494860C70BB028B0FB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LDebugFramework_Example/Pods-LDebugFramework_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LDebugFramework/LDebugFramework.framework",
+				"${PODS_ROOT}/../../LDebugFramework/LDebugToolModules.framework",
+				"${PODS_ROOT}/../../LDebugFramework/SDKCommonModule.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LDebugFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LDebugToolModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDKCommonModule.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -536,6 +541,7 @@
 			baseConfigurationReference = 90131D50BB5534C87A4231EC /* Pods-LDebugFramework_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 73889W623Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDebugFramework/LDebugFramework-Prefix.pch";
 				INFOPLIST_FILE = "LDebugFramework/LDebugFramework-Info.plist";
@@ -551,6 +557,7 @@
 			baseConfigurationReference = D9E62EF05E9F0223D99EA9B1 /* Pods-LDebugFramework_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 73889W623Z;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LDebugFramework/LDebugFramework-Prefix.pch";
 				INFOPLIST_FILE = "LDebugFramework/LDebugFramework-Info.plist";
