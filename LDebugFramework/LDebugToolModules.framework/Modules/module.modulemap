@@ -1,0 +1,6 @@
+framework module LDebugToolModules {
+  umbrella header "LDebugToolModules.h"
+
+  export *
+  module * { export * }
+}

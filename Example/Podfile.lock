@@ -1,0 +1,16 @@
+PODS:
+  - LDebugFramework (0.1.0)
+
+DEPENDENCIES:
+  - LDebugFramework (from `../`)
+
+EXTERNAL SOURCES:
+  LDebugFramework:
+    :path: ../
+
+SPEC CHECKSUMS:
+  LDebugFramework: 5d0ec69bf3f7a8f056c8ef2fb86cac15728ad498
+
+PODFILE CHECKSUM: d211517af2b1c00a6ccee13c82760ef3dfe02499
+
+COCOAPODS: 1.4.0
