@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LDebugFramework_Example' do
+  pod 'LDebugFramework', :path => '../'
+
+  target 'LDebugFramework_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
