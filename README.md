@@ -5,10 +5,6 @@ iOS开发调试辅助框架:浏览器日志输出,沙盒文件和NSUserDefault�
 -----
 
 
-
-使用  How to Use it
-=====
-
 ## Installation
 
 ### CocoaPods
@@ -43,6 +39,12 @@ github "12star9/LDebugFramework-Carthage.git"
 
 
 
+## 使用步骤
 
+按照以上CocoaPods或Carthage方式引入框架后，调试运行程序，查看控制台日志输出。*
+
+查找以下格式日志输出，复制对应地址，打开电脑浏览器，粘贴访问。
+
+![image](https://github.com/12star9/LDebugFramework/blob/master/images/DD2EFA41-7CF6-448E-826D-5365C5F4BF05.png)
 
 
